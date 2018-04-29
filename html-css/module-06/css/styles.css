@@ -37,6 +37,7 @@ img {
   align-items: center;
   justify-content: space-between;
   min-height: 80px;
+  margin-bottom: 120px;
 }
 
 .site-logo {
@@ -120,6 +121,7 @@ h2::after {
   display: flex;
   width: 380px;
   margin-bottom: 100px;
+  margin-top: 25px;
 }
 
 .img img{
