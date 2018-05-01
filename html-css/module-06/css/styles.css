@@ -21,12 +21,6 @@ body {
   height: auto;
 }
 
-img {
-  display: block;
-  max-width: 100%;
-  height: auto;
-}
-
 .container{
   width: 1200px;
   margin: 0 auto;
@@ -62,26 +56,41 @@ img {
 
 
 .site-navigation a {
-  display: block;
+  display: inline-block;
+  position: relative;
   line-height: 17px;
   text-transform: uppercase;
   text-decoration: none;
   font-weight: 500;
   color: #95e1d3;
+  padding: 0 10px;
 }
 
 .site-navigation a:hover{
   color: #f38181;
 }
 
-.site-navigation a:hover:after{
-  display: block;
+.site-navigation a:after {
+  visibility: hidden;
+  opacity: 0;
   width: 50px;
   height: 3px;
   background-color: #f38181;
   content: "";
   margin: 10px auto;
-}
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  bottom: -5px;
+  transition: .2s linear;
+  }
+
+.site-navigation a:hover:after {
+  visibility: visible;
+  opacity: 1;
+  transform: translateY(10px);
+  }
 
 h3 {
   font-family: 'Kaushan Script', cursive;
@@ -183,9 +192,13 @@ h2::after {
 
 .icon:hover .icon-img{
   position: relative;
-  top: -10px;
-  left: -10px;
+  transform: translate(-10px, -10px);
 }
+
+.icon-img {
+  transition: .2s linear;
+}
+
 
 .back{
   position: absolute;
@@ -196,23 +209,24 @@ h2::after {
   z-index: -1;
 }
 
-.above{
+.above {
   position: absolute;
-  background: linear-gradient(rgba(243,129,129,0.9), 
-  rgba(252,227,138,0.9));
+  background: linear-gradient(rgba(243,129,129,0.9), rgba(252,227,138,0.9));
   width: 380px;
   height: 470px;
-  top: -10px;
-  left: -10px;
+  left: 0;
   opacity: 0;
+  top: 0;
+  transition: .2s linear;
 }
 
-.icon:hover .above{
-  background: linear-gradient(rgba(243,129,129,0.9), 
-  rgba(252,227,138,0.9));
+
+.icon:hover .above {
+  background: linear-gradient(rgba(243,129,129,0.9), rgba(252,227,138,0.9));
   transition-duration: 200ms;
   opacity: 1;
-}
+  transform: translate(-10px, -10px);
+  }
 
 .social{
   display: flex;
@@ -220,10 +234,26 @@ h2::after {
   width: 380px;
   height: 470px;
   transform: translateY(-263px);
-  margin-left: 70px;
   z-index: -1;
   }
 
+.icon:hover .social {
+  visibility: visible;
+  transform: translate(-10px,-10px);
+}
+
+.social {
+  display: flex;
+  position: absolute;
+  align-items: center;
+  justify-content: center;
+  width: 380px;
+  height: 470px;
+  visibility: hidden;
+  left: 0;
+  top: 0;
+  transition: .2s linear;
+}
 
 .button-menu{
   position: relative;
@@ -288,8 +318,6 @@ h2::after {
   line-height: 24px;
   font-style: italic;
 }
-
-
 
 
 
