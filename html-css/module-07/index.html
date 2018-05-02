@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Макет страницы</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/styles.css">
+  </head>
+<body>
+  <header class="page-header">
+    <nav class="page-nav container"> 
+      <a href="#" class="site-logo">Golden</a>
+      <ul class="site-navigation">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Portfolio</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="page-main container">
+    <h2 class="name-list">Services</h2>
+    <p class="about">Proin iaculis purus consequat sem cure.</p>
+
+    <section class="wrapper">
+
+      <div class="catalog">
+        <div class="img">
+          <img class="icon1" src="img/icon1.png" alt="" width="40" height="39">
+        </div>
+        <div class="catalog-menu">
+          <h4 class="catalog-name">E-Commerce</h4>
+          <p class="catalog-text">Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean rhoncus posuere odio in tincidunt.</p>
+        </div>
+      </div>
+
+      <div class="catalog">
+        <div class="img">
+          <img class="icon2" src="img/icon2.png" alt="" width="41" height="35">
+        </div>
+        <div class="catalog-menu">
+          <h4 class="catalog-name">Responsive Web</h4>
+          <p class="catalog-text">Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean rhoncus posuere odio in tincidunt.</p>
+        </div>
+      </div>
+
+      <div class="catalog">
+        <div class="img">
+          <img class="icon3" src="img/icon3.png" alt="" width="29" height="38">
+        </div>
+        <div class="catalog-menu">
+          <h4 class="catalog-name">Web Security</h4>
+          <p class="catalog-text">Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean rhoncus posuere odio in tincidunt.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <form class="singup-form" method="GET" action="#">
+      <section class="container"> 
+        <h2 class="name-footer">Contact us</h2>
+        <p class="about-footer">Proin iaculis purus consequat sem cure. </p>
+      
+        <ul class="custom-list">
+          <li class="user-info"> 
+            <input type="text" name="user_name" required placeholder="Your name*">
+          </li>
+          <li class="user-info">
+            <input type="email"  name="user_email" required autocomplete="off" placeholder="Your E-mail*">
+          </li>
+          <li class="user-info">
+            <input type="text" name="user_subject" required placeholder="Subject*">
+          </li>
+          <li class="user-comment">
+            <textarea name="description" required placeholder="Your message*" cols="20" rows="10"></textarea>
+          </li>
+        </ul>
+
+        <button type="submit">
+          Send message
+        </button>
+      </section>
+    </form>
+  </footer>
+</body>
+</html>
