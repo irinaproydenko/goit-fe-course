@@ -1,0 +1,93 @@
+@media screen and (min-width:748px){
+  .container{
+    width: 748px;
+    padding: 0 20px;
+    margin: auto;
+   }
+
+  .page-nav{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 50px;
+    padding-bottom: 40px;
+    padding-left: 45px;
+    padding-right: 45px;
+  }
+
+  .site-logo{
+    font-size: 20px;
+  }
+
+  .name-list {
+    font-size: 52px;
+    line-height: 62px;
+  }
+
+  .catalog-name-list{
+    font-size: 24px;
+  }
+
+  .wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 490px;
+    margin-left: 110px;
+  }
+
+  .catalog{
+    flex: 0 0 235px;
+  }
+
+  .catalog-name-list{
+    margin-top: 330px;
+  }
+
+  .icon{
+    left: 140px;
+}
+
+.button1{
+    width: 220px;
+}
+
+  .button2{
+    width: 190px;
+}
+}
+
+
+@media screen and (min-width:940px){
+  .container{
+    width: 940px;
+    padding: 0;
+  }
+
+  .wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 940px;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (min-width:1400px){
+  .fon{
+    background-size: 100%;
+  }
+
+  .site-navigation a {
+    padding-bottom: 155px;
+  }
+
+  .about{
+    margin-top: 30px;
+    margin-bottom: 40px;
+  }
+}
+
+
+
+
