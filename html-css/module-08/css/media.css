@@ -1,8 +1,15 @@
 @media screen and (min-width:748px){
   .container{
     width: 748px;
-    padding: 0 20px;
-    margin: auto;
+    margin: 0 auto;
+   }
+
+   .wrapper-fon{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 710px;
    }
 
   .page-nav{
@@ -22,26 +29,27 @@
   .name-list {
     font-size: 52px;
     line-height: 62px;
+    width: 500px;
+    margin: 0 auto;
+    margin-bottom: 40px;
   }
 
-  .catalog-name-list{
-    font-size: 24px;
-  }
-
-  .wrapper{
+  .wrapper-section{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     width: 490px;
-    margin-left: 110px;
+    margin: 0 auto;
+  }
+
+  .catalog-name-list{
+    font-size: 24px;
+    margin-top: 150px;
+    padding-bottom: 20px;
   }
 
   .catalog{
     flex: 0 0 235px;
-  }
-
-  .catalog-name-list{
-    margin-top: 330px;
   }
 
   .icon{
@@ -50,10 +58,12 @@
 
 .button1{
     width: 220px;
+    margin-top: 250px;
 }
 
   .button2{
     width: 190px;
+    margin-top: 1100px;
 }
 }
 
@@ -61,33 +71,13 @@
 @media screen and (min-width:940px){
   .container{
     width: 940px;
-    padding: 0;
-  }
-
-  .wrapper{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    width: 940px;
     margin: 0 auto;
   }
+  .wrapper-section{
+    width: 940px;
+  }
+
+  .button2{
+    margin-top: 950px;
 }
-
-@media screen and (min-width:1400px){
-  .fon{
-    background-size: 100%;
-  }
-
-  .site-navigation a {
-    padding-bottom: 155px;
-  }
-
-  .about{
-    margin-top: 30px;
-    margin-bottom: 40px;
-  }
 }
-
-
-
-
