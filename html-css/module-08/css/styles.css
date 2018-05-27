@@ -42,13 +42,13 @@ img {
 .container{
   width: 320px;
   margin: 0 auto;
+  padding: 0 30px;
 }
 
 .page-nav{
   display: flex;
   flex-wrap: wrap-reverse;
   justify-content: center;
-  width: 180px;
   padding-top: 30px;
 }
 
@@ -110,7 +110,7 @@ img {
   background-repeat: no-repeat;
   background-position: center;
   z-index: -1;
-  }
+}
 
 .main-list{
   position: relative;
@@ -145,7 +145,7 @@ button{
   margin: 0 auto;
   outline: none;
   border: 0;
-  width: 280px;
+  width: 260px;
   height: 40px;
   border-radius: 50px;
   font-family: 'Montserrat', "Arial", sans-serif;
@@ -157,7 +157,7 @@ button{
 }
 
 .button1{
-  margin-top: 230px;
+  margin-top: 240px;
   background-color:  #ff4e50;
   color:  #ffffff;
 }
@@ -168,10 +168,8 @@ button{
 }
 
 .wrapper-section{
-  position: absolute;
-  top: 610px;
-  left: 30px;
-  right: 30px;
+  display: block;
+  margin-top: 410px;
 }
 
 .catalog-name-list{
@@ -190,6 +188,10 @@ button{
   width: 200px;
   margin: 0 auto;
   cursor: pointer;
+}
+
+.catalog:not(:last-child){
+  margin-bottom: 20px;
 }
 
 .foto{
@@ -238,7 +240,7 @@ button{
   color:  #333333;
   font-size: 22px;
   text-align: center;
-  margin-bottom: 20px;
+  padding-bottom: 20px;
 }
 
 .catalog-text{
@@ -248,11 +250,10 @@ button{
   color: #666666;
   font-size: 14px;
   text-align: center;
-  margin-bottom: 30px;
 }
 
 .button2{
-  margin-top: 1500px;
+  margin-top: 50px;
   margin-bottom: 60px;
   border: 2px solid #ff4e50;
   background-color:  #ffffff;
