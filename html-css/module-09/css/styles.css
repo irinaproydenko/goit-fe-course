@@ -81,7 +81,7 @@ img {
 }
 
 .site-logo {
-  position: absolute;
+  display: block;
   left: 80px;
   right: 80px;
   bottom: 5px;
@@ -154,13 +154,13 @@ img {
 
 .button1{
   margin-top: 20px;
-  background-color:  #ff4e50;
+  background-color: #ff4e50;
   color:  #ffffff;
 }
 
 .button1:hover{
-  background-color:  #ffffff;
-  color:  #ff4e50;
+  background-color: #ffffff;
+  color: #ff4e50;
 }
 
 .wrapper-section{
