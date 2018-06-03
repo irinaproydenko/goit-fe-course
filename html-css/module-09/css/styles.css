@@ -40,7 +40,9 @@ img {
 }
 
 .main-header{
+  position: relative;
   padding-top: 30px;
+  z-index: 1;
 }
 
 .site-navigation{
@@ -100,7 +102,6 @@ img {
   background-image: url(../img/fon.jpg);
   background-repeat: no-repeat;
   background-position: center;
-  z-index: -1;
 }
 
 .main-list{
@@ -109,6 +110,7 @@ img {
   left: 20px;
   right: 20px;
   margin: 0 auto;
+  z-index: 2;
 }
 
 .name-list {
