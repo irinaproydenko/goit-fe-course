@@ -1,0 +1,45 @@
+.footer-page {
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 25px;
+  min-height: 65px;
+}
+
+.footer-avtor a{
+  color: $primary-pink-color;
+  text-decoration: none;
+}
+
+.footer__box {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 380px;
+  margin: 0;
+  padding: 0;
+}
+
+input, .footer__box--button {
+  border: none;
+  outline: none;
+}
+
+input {
+  width: 230px;
+  height: 40px;
+  padding-left: 15px;
+  border: 1px solid $primary-border-color;
+  opacity: 0.4;
+}
+
+.footer__box--button {
+  width: 150px;
+  height: 40px;
+  background-color: $primary-footer-color;
+  font-size: 14px;
+  color: $primary-white-color;
+  text-transform: uppercase;
+}

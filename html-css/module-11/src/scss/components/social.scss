@@ -1,0 +1,51 @@
+.team__button{
+  position: relative;
+  width: 56px;
+  height: 56px;
+  background-color: $primary-yellov-color;
+  border: none;
+  margin-left: 3px;
+  padding-left: 5px;
+  cursor: pointer;
+}
+
+.team__button svg{
+  display: inline-block;
+  width: 50%;
+  height: 50%;
+  fill: $primary-pink-color;
+}
+
+.team__button:hover svg{
+  fill: $primary-white-color;
+}
+
+.team__button:hover {
+  background: $primary-pink-color;
+}
+
+.team__item:hover .team__social{
+  z-index: 1;
+}
+
+
+.team__menu{
+  margin-top: 30px;
+}
+
+.team__menu--name{
+  font-family: 'Montserrat', sans-serif;
+  color: $primary-dark-color;
+  font-size: 14px;
+  line-height: 17px;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+
+.team__menu--about{
+  font-family: 'Montserrat', sans-serif;
+  color: $primary-light-color;
+  font-size: 15px;
+  line-height: 24px;
+  font-style: italic;
+}

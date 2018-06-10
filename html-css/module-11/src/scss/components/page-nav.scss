@@ -1,0 +1,12 @@
+.page-nav{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 80px;
+  margin-bottom: 120px;
+}
+
+.page-nav__site-navigation{
+  width: 490px;
+}

@@ -1,0 +1,88 @@
+.main-list{
+  position: relative;
+  display: block;
+  width: 840px;
+  margin: 0 auto;
+  margin-top: 175px;
+}
+
+.main-list-about{
+  font-family: 'Kaushan Script', cursive;
+  font-style: normal;
+  font-weight: 400;
+  color: $primary-white-color;
+  font-size: 72px;
+  text-align: center;
+}
+
+.main-list-name {
+  display: block;
+  margin-top: 40px;
+  font-family: 'Montserrat', "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  color: $primary-white-color;
+  font-size: 150px;
+  line-height: 140px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.main-list-button{
+  display: block;
+  margin: 0 auto;
+  margin-top: 125px;
+  outline: none;
+  border: 0;
+  width: 160px;
+  height: 40px;
+  border: 3px solid $primary-white-color;
+  font-family: 'Montserrat', "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  color: $primary-white-color;
+  text-align: center;
+  cursor: pointer;
+  background-color: inherit;
+}
+
+
+.main-list-button:hover{
+  background-color: $primary-yellov-color;
+  color: $primary-white-color;
+}
+
+.main-page {
+  display: block;
+  margin-top: 260px;
+
+}
+
+h3 {
+  font-family: 'Kaushan Script', cursive;
+  color: $primary-dark-color;
+  font-size: 24px;
+  line-height: 29px;
+  text-align: center;
+}
+
+h2 {
+  font-family: 'Montserrat', sans-serif;
+  color: $primary-dark-color;
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 20px;
+}
+
+h2::after {
+  display: block;
+  width: 60px;
+  height: 3px;
+  background-color: $primary-pink-color;
+  content: "";
+  margin: 40px auto;
+ 
+}

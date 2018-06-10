@@ -1,0 +1,21 @@
+html {
+  box-sizing: border-box;
+}
+  
+*{
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  display: block;
+  font-family: $main-font-stack;
+  max-width: 100%;
+  height: auto;
+}
