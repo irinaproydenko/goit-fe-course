@@ -611,11 +611,7 @@ h2::after {
   margin-top: 25px;
 }
 
-.catalog__item:nth-last-child(-n + 3) {
-  margin-bottom: 0;
-}
-
-.catalog__icon::before {
+.catalog__item::before {
   display: block;
   float: left;
   content: '';
@@ -625,28 +621,32 @@ h2::after {
   background-position: top center;
 }
 
-.catalog__icon::before :before {
+.catalog__item--photography::before {
   background-image: url("../img/icons/catalog/photography.png");
 }
 
-.catalog__icon::before :before {
+.catalog__item--web::before {
   background-image: url("../img/icons/catalog/web.png");
 }
 
-.catalog__icon::before :before {
+.catalog__item--creativity::before {
   background-image: url("../img/icons/catalog/creativity.png");
 }
 
-.catalog__icon::before :before {
+.catalog__item--seo::before {
   background-image: url("../img/icons/catalog/seo.png");
 }
 
-.catalog__icon::before :before {
+.catalog__item--css::before {
   background-image: url("../img/icons/catalog/css.png");
 }
 
-.catalog__icon::before :before {
+.catalog__item--digital::before {
   background-image: url("../img/icons/catalog/digital.png");
+}
+
+.catalog__item:nth-last-child(-n + 3) {
+  margin-bottom: 0;
 }
 
 .catalog__item-title {
