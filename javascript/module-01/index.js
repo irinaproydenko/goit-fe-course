@@ -4,27 +4,26 @@
 const ADMIN_LOGIN = 'admin';
 const ADMIN_PASSWORD = 'm4ngo1zh4ackz0r';
 
-const USER_LOGIN = prompt('Введите логин!');
+const login = prompt('Введите логин!');
 
 const message_cancelled = 'Отменено пользователем!';
 const message_access_denied = 'Доступ запрещен!';
 const message_welcome = 'Добро пожаловать!';
 
 let message;
-let USER_PASSWORD;
 
-if (USER_LOGIN === ADMIN_LOGIN) {
-  USER_PASSWORD = prompt('Введите пароль!');
+if (login === ADMIN_LOGIN) {
+  const password = prompt('Введите пароль!');
 
-  if (USER_PASSWORD === ADMIN_PASSWORD) {
+  if (password === ADMIN_PASSWORD) {
     message = message_welcome;
-  } else if (USER_PASSWORD === null) {
+  } else if (password === null) {
     message = message_cancelled;
   } else {
     message = message_access_denied;
   } 
 }
-    else if(USER_LOGIN === null){
+    else if(login === null){
     message = message_cancelled;
   } else{
     message = message_access_denied;
