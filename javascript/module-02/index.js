@@ -4,28 +4,26 @@ let userInput;
 const numbers = [];
 let total = 0;
 
-const message_sum = `Общая сумма чисел равна ${total}`;
 const message_fatal = `Было введено не число, попробуйте еще раз`;
+let message;
 
 do {
   userInput = Number ( prompt('Введите число', '') ); 
 
-if (userInput === Number) {
-  message = message_sum;
-  numbers.push(total);
+if (Number.isInteger(userInput) && userInput) {
+  numbers.push(userInput);
+  console.log(numbers);
   } else if (userInput !== null) {
   message = message_fatal;
 }
 
 
-} while (userInput <= numbers.length)
-;
+} while (userInput)
+
 
 for (const value of numbers) {
-  console.log(value); 
+  total = total + value;
 }
-
+const message_sum = `Общая сумма чисел равна ${total}`;
 
 alert(message);
-
-
